@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1510A32D19E3E21900CCB15A /* CETUTParcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510A32C19E3E21900CCB15A /* CETUTParcer.m */; };
+		1510A33019E41C4D00CCB15A /* CETUTbyCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510A32F19E41C4D00CCB15A /* CETUTbyCurrency.m */; };
+		1510A33319E42DD400CCB15A /* CETUTbyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510A33219E42DD400CCB15A /* CETUTbyManager.m */; };
+		1510A33619E4302900CCB15A /* CETUTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510A33519E4302900CCB15A /* CETUTTableViewController.m */; };
+		1510A33919E431B200CCB15A /* CETUTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510A33819E431B200CCB15A /* CETUTTableViewCell.m */; };
+		15298D2619DE8F1500F2B79A /* TutbyFinancePropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15298D2519DE8F1500F2B79A /* TutbyFinancePropertyList.plist */; };
+		15298D2C19DEC98600F2B79A /* CENetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 15298D2B19DEC98600F2B79A /* CENetWork.m */; };
+		15298D3319DEE1A000F2B79A /* CECurrencyNationalBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 15298D3219DEE1A000F2B79A /* CECurrencyNationalBank.m */; };
+		15298D3719DEE39C00F2B79A /* CECurrencyNationalBankParcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15298D3619DEE39C00F2B79A /* CECurrencyNationalBankParcer.m */; };
+		1533BB2919E26B5600234C35 /* CENBRateXMLParcerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB2819E26B5600234C35 /* CENBRateXMLParcerDelegate.m */; };
+		1533BB2D19E2886F00234C35 /* CENBRateDynamics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB2C19E2886F00234C35 /* CENBRateDynamics.m */; };
+		1533BB3019E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB2F19E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.m */; };
+		1533BB3319E296D600234C35 /* CEMetalsRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB3219E296D600234C35 /* CEMetalsRate.m */; };
+		1533BB3519E297DC00234C35 /* MetalsPropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1533BB3419E297DC00234C35 /* MetalsPropertyList.plist */; };
+		1533BB3819E29F4A00234C35 /* CEMetalRateParcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB3719E29F4A00234C35 /* CEMetalRateParcer.m */; };
+		1533BB3B19E2A20B00234C35 /* CEMetalRateXMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB3A19E2A20B00234C35 /* CEMetalRateXMLDelegate.m */; };
+		1533BB3E19E2A42B00234C35 /* CERefinancingRateParcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB3D19E2A42B00234C35 /* CERefinancingRateParcer.m */; };
+		1533BB4119E2A56600234C35 /* CERefinancingRateParcerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB4019E2A56600234C35 /* CERefinancingRateParcerDelegate.m */; };
+		1533BB4419E2ADB900234C35 /* CENationalBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB4319E2ADB900234C35 /* CENationalBank.m */; };
+		1533BB4719E2E28C00234C35 /* CENBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB4619E2E28C00234C35 /* CENBTableViewController.m */; };
+		1533BB4A19E2E34500234C35 /* CENBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BB4919E2E34500234C35 /* CENBTableViewCell.m */; };
+		153FF37B19ED03EE0081FE9F /* DataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 153FF37919ED03EE0081FE9F /* DataBase.xcdatamodeld */; };
+		153FF37F19ED04CD0081FE9F /* CEDataBaseDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF37E19ED04CD0081FE9F /* CEDataBaseDirector.m */; };
+		153FF38219ED04EE0081FE9F /* CEEntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF38119ED04EE0081FE9F /* CEEntityManager.m */; };
+		153FF39219ED0B2E0081FE9F /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF39119ED0B2E0081FE9F /* Currency.m */; };
+		153FF39819ED0C540081FE9F /* Currency+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF39719ED0C540081FE9F /* Currency+Create.m */; };
+		153FF39B19ED0C6B0081FE9F /* Rate+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF39A19ED0C6B0081FE9F /* Rate+Create.m */; };
+		153FF39E19ED14EE0081FE9F /* Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = 153FF39D19ED14EE0081FE9F /* Rate.m */; };
+		1544EE5C19E6762000A43505 /* CETUTParametrs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544EE5B19E6762000A43505 /* CETUTParametrs.m */; };
+		1544EE5F19E67A2F00A43505 /* CEBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544EE5E19E67A2F00A43505 /* CEBank.m */; };
+		1544EE6219E6D8D600A43505 /* CELockWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544EE6119E6D8D600A43505 /* CELockWindow.m */; };
+		1547A99219EF99400048EA9C /* CETUTParcerDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A99119EF99400048EA9C /* CETUTParcerDetail.m */; };
+		1547A99519EF9C640048EA9C /* CETUTDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A99419EF9C640048EA9C /* CETUTDetails.m */; };
+		1547A99819EF9CD60048EA9C /* CETUTDetailsCurrencyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A99719EF9CD60048EA9C /* CETUTDetailsCurrencyRate.m */; };
+		1547A99B19EFC60E0048EA9C /* CETUTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A99A19EFC60E0048EA9C /* CETUTDetailViewController.m */; };
+		1547A99E19EFEC830048EA9C /* CEConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A99D19EFEC830048EA9C /* CEConverter.m */; };
+		1547A9A119F005DD0048EA9C /* CEConverterExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A9A019F005DD0048EA9C /* CEConverterExtended.m */; };
+		1547A9A419F00A4D0048EA9C /* CEConverterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A9A319F00A4D0048EA9C /* CEConverterCell.m */; };
+		1547A9A719F00A870048EA9C /* CEConverterSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547A9A619F00A870048EA9C /* CEConverterSelectTableView.m */; };
+		1551C44719EE77750020A62E /* CEImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551C44619EE77750020A62E /* CEImageView.m */; };
+		1551C45019EEB4770020A62E /* CELoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551C44F19EEB4770020A62E /* CELoadingView.m */; };
+		1558E2AF19EBA69400198F2D /* CESettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558E2AE19EBA69400198F2D /* CESettings.m */; };
+		1558E2B219EC035600198F2D /* CESettingsLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558E2B119EC035600198F2D /* CESettingsLocationTableViewController.m */; };
+		157887BE19E51CFF002EBD27 /* CEDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 157887BD19E51CFF002EBD27 /* CEDate.m */; };
+		157B190D19DE877200C0BD05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B190C19DE877200C0BD05 /* main.m */; };
+		157B191019DE877200C0BD05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B190F19DE877200C0BD05 /* AppDelegate.m */; };
+		157B191619DE877200C0BD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B191419DE877200C0BD05 /* Main.storyboard */; };
+		157B191819DE877200C0BD05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157B191719DE877200C0BD05 /* Images.xcassets */; };
+		157B191B19DE877200C0BD05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B191919DE877200C0BD05 /* LaunchScreen.xib */; };
+		157B192719DE877200C0BD05 /* CurrencyExchangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B192619DE877200C0BD05 /* CurrencyExchangeTests.m */; };
+		157FD64019F112D100267C07 /* CEMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157FD63F19F112D100267C07 /* CEMapViewController.m */; };
+		157FD65919F1158600267C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD65719F1153000267C07 /* SystemConfiguration.framework */; };
+		157FD65A19F1158600267C07 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD65519F1151800267C07 /* QuartzCore.framework */; };
+		157FD65B19F1158600267C07 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD65319F1150900267C07 /* OpenGLES.framework */; };
+		157FD65C19F1158600267C07 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD65119F114ED00267C07 /* libz.dylib */; };
+		157FD65D19F1158600267C07 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64F19F114D400267C07 /* libicucore.dylib */; };
+		157FD65E19F1158600267C07 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64D19F114AC00267C07 /* libc++.dylib */; };
+		157FD65F19F1158600267C07 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64B19F1148900267C07 /* ImageIO.framework */; };
+		157FD66019F1158600267C07 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64919F1147000267C07 /* GLKit.framework */; };
+		157FD66119F1158600267C07 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64719F1145800267C07 /* CoreText.framework */; };
+		157FD66219F1158600267C07 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64519F1145000267C07 /* CoreLocation.framework */; };
+		157FD66319F1158600267C07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD64319F1143800267C07 /* AVFoundation.framework */; };
+		157FD66519F1158600267C07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153FF38319ED056D0081FE9F /* CoreData.framework */; };
+		157FD66C19F1205100267C07 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157FD66B19F1205100267C07 /* GoogleMaps.framework */; };
+		157FD66E19F1268800267C07 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 157FD66D19F1268800267C07 /* GoogleMaps.bundle */; };
+		15A0309619F0E5DF003BEA73 /* CEBelRub.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A0309519F0E5DF003BEA73 /* CEBelRub.m */; };
+		15B8C4F519E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8C4F419E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.m */; };
+		15B8C4F819E7C4B400B909F3 /* CESettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8C4F719E7C4B400B909F3 /* CESettingsTableViewController.m */; };
+		15CE71F319ED462500F0AFD3 /* CEHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE71F219ED462500F0AFD3 /* CEHistoryTableViewController.m */; };
+		15E05EF619E7C91700D789C8 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15E05EF519E7C91700D789C8 /* Settings.plist */; };
+		15E05EF919E7E66C00D789C8 /* CESettingsFavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E05EF819E7E66C00D789C8 /* CESettingsFavoriteTableViewController.m */; };
+		15E05EFC19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E05EFB19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.m */; };
+		15E05EFF19E7F48A00D789C8 /* CESettingsFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E05EFE19E7F48A00D789C8 /* CESettingsFavoriteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		157B192119DE877200C0BD05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 157B18FF19DE877200C0BD05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157B190619DE877200C0BD05;
+			remoteInfo = CurrencyExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1510A32B19E3E21900CCB15A /* CETUTParcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTParcer.h; sourceTree = "<group>"; };
+		1510A32C19E3E21900CCB15A /* CETUTParcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTParcer.m; sourceTree = "<group>"; };
+		1510A32E19E41C4D00CCB15A /* CETUTbyCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTbyCurrency.h; sourceTree = "<group>"; };
+		1510A32F19E41C4D00CCB15A /* CETUTbyCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTbyCurrency.m; sourceTree = "<group>"; };
+		1510A33119E42DD400CCB15A /* CETUTbyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTbyManager.h; sourceTree = "<group>"; };
+		1510A33219E42DD400CCB15A /* CETUTbyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTbyManager.m; sourceTree = "<group>"; };
+		1510A33419E4302900CCB15A /* CETUTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTTableViewController.h; sourceTree = "<group>"; };
+		1510A33519E4302900CCB15A /* CETUTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTTableViewController.m; sourceTree = "<group>"; };
+		1510A33719E431B200CCB15A /* CETUTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTTableViewCell.h; sourceTree = "<group>"; };
+		1510A33819E431B200CCB15A /* CETUTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTTableViewCell.m; sourceTree = "<group>"; };
+		15298D2519DE8F1500F2B79A /* TutbyFinancePropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TutbyFinancePropertyList.plist; sourceTree = "<group>"; };
+		15298D2A19DEC98600F2B79A /* CENetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENetWork.h; sourceTree = "<group>"; };
+		15298D2B19DEC98600F2B79A /* CENetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENetWork.m; sourceTree = "<group>"; };
+		15298D2F19DED7CA00F2B79A /* IParcer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IParcer.h; sourceTree = "<group>"; };
+		15298D3019DEDFFD00F2B79A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		15298D3119DEE1A000F2B79A /* CECurrencyNationalBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECurrencyNationalBank.h; sourceTree = "<group>"; };
+		15298D3219DEE1A000F2B79A /* CECurrencyNationalBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECurrencyNationalBank.m; sourceTree = "<group>"; };
+		15298D3519DEE39C00F2B79A /* CECurrencyNationalBankParcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECurrencyNationalBankParcer.h; sourceTree = "<group>"; };
+		15298D3619DEE39C00F2B79A /* CECurrencyNationalBankParcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECurrencyNationalBankParcer.m; sourceTree = "<group>"; };
+		1533BB2719E26B5600234C35 /* CENBRateXMLParcerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENBRateXMLParcerDelegate.h; sourceTree = "<group>"; };
+		1533BB2819E26B5600234C35 /* CENBRateXMLParcerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENBRateXMLParcerDelegate.m; sourceTree = "<group>"; };
+		1533BB2B19E2886F00234C35 /* CENBRateDynamics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENBRateDynamics.h; sourceTree = "<group>"; };
+		1533BB2C19E2886F00234C35 /* CENBRateDynamics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENBRateDynamics.m; sourceTree = "<group>"; };
+		1533BB2E19E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENBRateDynamicsXMLParcerDelegate.h; sourceTree = "<group>"; };
+		1533BB2F19E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENBRateDynamicsXMLParcerDelegate.m; sourceTree = "<group>"; };
+		1533BB3119E296D600234C35 /* CEMetalsRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMetalsRate.h; sourceTree = "<group>"; };
+		1533BB3219E296D600234C35 /* CEMetalsRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMetalsRate.m; sourceTree = "<group>"; };
+		1533BB3419E297DC00234C35 /* MetalsPropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MetalsPropertyList.plist; sourceTree = "<group>"; };
+		1533BB3619E29F4A00234C35 /* CEMetalRateParcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMetalRateParcer.h; sourceTree = "<group>"; };
+		1533BB3719E29F4A00234C35 /* CEMetalRateParcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMetalRateParcer.m; sourceTree = "<group>"; };
+		1533BB3919E2A20B00234C35 /* CEMetalRateXMLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMetalRateXMLDelegate.h; sourceTree = "<group>"; };
+		1533BB3A19E2A20B00234C35 /* CEMetalRateXMLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMetalRateXMLDelegate.m; sourceTree = "<group>"; };
+		1533BB3C19E2A42B00234C35 /* CERefinancingRateParcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERefinancingRateParcer.h; sourceTree = "<group>"; };
+		1533BB3D19E2A42B00234C35 /* CERefinancingRateParcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERefinancingRateParcer.m; sourceTree = "<group>"; };
+		1533BB3F19E2A56600234C35 /* CERefinancingRateParcerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERefinancingRateParcerDelegate.h; sourceTree = "<group>"; };
+		1533BB4019E2A56600234C35 /* CERefinancingRateParcerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERefinancingRateParcerDelegate.m; sourceTree = "<group>"; };
+		1533BB4219E2ADB900234C35 /* CENationalBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENationalBank.h; sourceTree = "<group>"; };
+		1533BB4319E2ADB900234C35 /* CENationalBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENationalBank.m; sourceTree = "<group>"; };
+		1533BB4519E2E28C00234C35 /* CENBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENBTableViewController.h; sourceTree = "<group>"; };
+		1533BB4619E2E28C00234C35 /* CENBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENBTableViewController.m; sourceTree = "<group>"; };
+		1533BB4819E2E34500234C35 /* CENBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENBTableViewCell.h; sourceTree = "<group>"; };
+		1533BB4919E2E34500234C35 /* CENBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENBTableViewCell.m; sourceTree = "<group>"; };
+		153FF37A19ED03EE0081FE9F /* DataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBase.xcdatamodel; sourceTree = "<group>"; };
+		153FF37D19ED04CD0081FE9F /* CEDataBaseDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDataBaseDirector.h; sourceTree = "<group>"; };
+		153FF37E19ED04CD0081FE9F /* CEDataBaseDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDataBaseDirector.m; sourceTree = "<group>"; };
+		153FF38019ED04EE0081FE9F /* CEEntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEEntityManager.h; sourceTree = "<group>"; };
+		153FF38119ED04EE0081FE9F /* CEEntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEEntityManager.m; sourceTree = "<group>"; };
+		153FF38319ED056D0081FE9F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		153FF39019ED0B2E0081FE9F /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		153FF39119ED0B2E0081FE9F /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
+		153FF39619ED0C540081FE9F /* Currency+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Currency+Create.h"; sourceTree = "<group>"; };
+		153FF39719ED0C540081FE9F /* Currency+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Currency+Create.m"; sourceTree = "<group>"; };
+		153FF39919ED0C6B0081FE9F /* Rate+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rate+Create.h"; sourceTree = "<group>"; };
+		153FF39A19ED0C6B0081FE9F /* Rate+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rate+Create.m"; sourceTree = "<group>"; };
+		153FF39C19ED14EE0081FE9F /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		153FF39D19ED14EE0081FE9F /* Rate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rate.m; sourceTree = "<group>"; };
+		1544EE5A19E6762000A43505 /* CETUTParametrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTParametrs.h; sourceTree = "<group>"; };
+		1544EE5B19E6762000A43505 /* CETUTParametrs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTParametrs.m; sourceTree = "<group>"; };
+		1544EE5D19E67A2F00A43505 /* CEBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBank.h; sourceTree = "<group>"; };
+		1544EE5E19E67A2F00A43505 /* CEBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBank.m; sourceTree = "<group>"; };
+		1544EE6019E6D8D600A43505 /* CELockWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CELockWindow.h; sourceTree = "<group>"; };
+		1544EE6119E6D8D600A43505 /* CELockWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CELockWindow.m; sourceTree = "<group>"; };
+		1547A99019EF99400048EA9C /* CETUTParcerDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTParcerDetail.h; sourceTree = "<group>"; };
+		1547A99119EF99400048EA9C /* CETUTParcerDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTParcerDetail.m; sourceTree = "<group>"; };
+		1547A99319EF9C640048EA9C /* CETUTDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTDetails.h; sourceTree = "<group>"; };
+		1547A99419EF9C640048EA9C /* CETUTDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTDetails.m; sourceTree = "<group>"; };
+		1547A99619EF9CD60048EA9C /* CETUTDetailsCurrencyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTDetailsCurrencyRate.h; sourceTree = "<group>"; };
+		1547A99719EF9CD60048EA9C /* CETUTDetailsCurrencyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTDetailsCurrencyRate.m; sourceTree = "<group>"; };
+		1547A99919EFC60E0048EA9C /* CETUTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETUTDetailViewController.h; sourceTree = "<group>"; };
+		1547A99A19EFC60E0048EA9C /* CETUTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETUTDetailViewController.m; sourceTree = "<group>"; };
+		1547A99C19EFEC830048EA9C /* CEConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEConverter.h; sourceTree = "<group>"; };
+		1547A99D19EFEC830048EA9C /* CEConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEConverter.m; sourceTree = "<group>"; };
+		1547A99F19F005DD0048EA9C /* CEConverterExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEConverterExtended.h; sourceTree = "<group>"; };
+		1547A9A019F005DD0048EA9C /* CEConverterExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEConverterExtended.m; sourceTree = "<group>"; };
+		1547A9A219F00A4D0048EA9C /* CEConverterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEConverterCell.h; sourceTree = "<group>"; };
+		1547A9A319F00A4D0048EA9C /* CEConverterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEConverterCell.m; sourceTree = "<group>"; };
+		1547A9A519F00A870048EA9C /* CEConverterSelectTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEConverterSelectTableView.h; sourceTree = "<group>"; };
+		1547A9A619F00A870048EA9C /* CEConverterSelectTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEConverterSelectTableView.m; sourceTree = "<group>"; };
+		1551C44519EE77750020A62E /* CEImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEImageView.h; sourceTree = "<group>"; };
+		1551C44619EE77750020A62E /* CEImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEImageView.m; sourceTree = "<group>"; };
+		1551C44E19EEB4770020A62E /* CELoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CELoadingView.h; sourceTree = "<group>"; };
+		1551C44F19EEB4770020A62E /* CELoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CELoadingView.m; sourceTree = "<group>"; };
+		1558E2AD19EBA69400198F2D /* CESettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESettings.h; sourceTree = "<group>"; };
+		1558E2AE19EBA69400198F2D /* CESettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESettings.m; sourceTree = "<group>"; };
+		1558E2B019EC035600198F2D /* CESettingsLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESettingsLocationTableViewController.h; sourceTree = "<group>"; };
+		1558E2B119EC035600198F2D /* CESettingsLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESettingsLocationTableViewController.m; sourceTree = "<group>"; };
+		157887BC19E51CFF002EBD27 /* CEDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDate.h; sourceTree = "<group>"; };
+		157887BD19E51CFF002EBD27 /* CEDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDate.m; sourceTree = "<group>"; };
+		157B190719DE877200C0BD05 /* CurrencyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B190B19DE877200C0BD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B190C19DE877200C0BD05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		157B190E19DE877200C0BD05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		157B190F19DE877200C0BD05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		157B191519DE877200C0BD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		157B191719DE877200C0BD05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		157B191A19DE877200C0BD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		157B192019DE877200C0BD05 /* CurrencyExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B192519DE877200C0BD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B192619DE877200C0BD05 /* CurrencyExchangeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyExchangeTests.m; sourceTree = "<group>"; };
+		157FD63E19F112D100267C07 /* CEMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMapViewController.h; sourceTree = "<group>"; };
+		157FD63F19F112D100267C07 /* CEMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMapViewController.m; sourceTree = "<group>"; };
+		157FD64319F1143800267C07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		157FD64519F1145000267C07 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		157FD64719F1145800267C07 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		157FD64919F1147000267C07 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		157FD64B19F1148900267C07 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		157FD64D19F114AC00267C07 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		157FD64F19F114D400267C07 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		157FD65119F114ED00267C07 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		157FD65319F1150900267C07 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		157FD65519F1151800267C07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		157FD65719F1153000267C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		157FD66B19F1205100267C07 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		157FD66D19F1268800267C07 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		15A0309419F0E5DF003BEA73 /* CEBelRub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBelRub.h; sourceTree = "<group>"; };
+		15A0309519F0E5DF003BEA73 /* CEBelRub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBelRub.m; sourceTree = "<group>"; };
+		15B8C4F319E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMainTableVIewControllerTableViewController.h; sourceTree = "<group>"; };
+		15B8C4F419E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMainTableVIewControllerTableViewController.m; sourceTree = "<group>"; };
+		15B8C4F619E7C4B400B909F3 /* CESettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESettingsTableViewController.h; path = ../CESettingsTableViewController.h; sourceTree = "<group>"; };
+		15B8C4F719E7C4B400B909F3 /* CESettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESettingsTableViewController.m; path = ../CESettingsTableViewController.m; sourceTree = "<group>"; };
+		15CE71F119ED462500F0AFD3 /* CEHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEHistoryTableViewController.h; sourceTree = "<group>"; };
+		15CE71F219ED462500F0AFD3 /* CEHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEHistoryTableViewController.m; sourceTree = "<group>"; };
+		15E05EF519E7C91700D789C8 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		15E05EF719E7E66C00D789C8 /* CESettingsFavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESettingsFavoriteTableViewController.h; path = ../CESettingsFavoriteTableViewController.h; sourceTree = "<group>"; };
+		15E05EF819E7E66C00D789C8 /* CESettingsFavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESettingsFavoriteTableViewController.m; path = ../CESettingsFavoriteTableViewController.m; sourceTree = "<group>"; };
+		15E05EFA19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESettingsFavoriteTableViewCell.h; sourceTree = "<group>"; };
+		15E05EFB19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESettingsFavoriteTableViewCell.m; sourceTree = "<group>"; };
+		15E05EFD19E7F48A00D789C8 /* CESettingsFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESettingsFavoriteViewController.h; path = ../CESettingsFavoriteViewController.h; sourceTree = "<group>"; };
+		15E05EFE19E7F48A00D789C8 /* CESettingsFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESettingsFavoriteViewController.m; path = ../CESettingsFavoriteViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157B190419DE877200C0BD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FD65919F1158600267C07 /* SystemConfiguration.framework in Frameworks */,
+				157FD65A19F1158600267C07 /* QuartzCore.framework in Frameworks */,
+				157FD65B19F1158600267C07 /* OpenGLES.framework in Frameworks */,
+				157FD65C19F1158600267C07 /* libz.dylib in Frameworks */,
+				157FD65D19F1158600267C07 /* libicucore.dylib in Frameworks */,
+				157FD65E19F1158600267C07 /* libc++.dylib in Frameworks */,
+				157FD65F19F1158600267C07 /* ImageIO.framework in Frameworks */,
+				157FD66019F1158600267C07 /* GLKit.framework in Frameworks */,
+				157FD66119F1158600267C07 /* CoreText.framework in Frameworks */,
+				157FD66C19F1205100267C07 /* GoogleMaps.framework in Frameworks */,
+				157FD66219F1158600267C07 /* CoreLocation.framework in Frameworks */,
+				157FD66319F1158600267C07 /* AVFoundation.framework in Frameworks */,
+				157FD66519F1158600267C07 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B191D19DE877200C0BD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1510A32A19E3E1C600CCB15A /* TUTBY */ = {
+			isa = PBXGroup;
+			children = (
+				1510A32B19E3E21900CCB15A /* CETUTParcer.h */,
+				1510A32C19E3E21900CCB15A /* CETUTParcer.m */,
+				1547A99019EF99400048EA9C /* CETUTParcerDetail.h */,
+				1547A99119EF99400048EA9C /* CETUTParcerDetail.m */,
+			);
+			path = TUTBY;
+			sourceTree = "<group>";
+		};
+		15298D2419DE8DFE00F2B79A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				15298D2519DE8F1500F2B79A /* TutbyFinancePropertyList.plist */,
+				1533BB3419E297DC00234C35 /* MetalsPropertyList.plist */,
+				15E05EF519E7C91700D789C8 /* Settings.plist */,
+				153FF37919ED03EE0081FE9F /* DataBase.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		15298D2719DEC7FD00F2B79A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				153FF37C19ED04030081FE9F /* CoreData */,
+				15298D2419DE8DFE00F2B79A /* Data */,
+				15298D3119DEE1A000F2B79A /* CECurrencyNationalBank.h */,
+				15298D3219DEE1A000F2B79A /* CECurrencyNationalBank.m */,
+				1510A32E19E41C4D00CCB15A /* CETUTbyCurrency.h */,
+				1510A32F19E41C4D00CCB15A /* CETUTbyCurrency.m */,
+				1544EE5A19E6762000A43505 /* CETUTParametrs.h */,
+				1544EE5B19E6762000A43505 /* CETUTParametrs.m */,
+				1533BB3119E296D600234C35 /* CEMetalsRate.h */,
+				1533BB3219E296D600234C35 /* CEMetalsRate.m */,
+				1544EE5D19E67A2F00A43505 /* CEBank.h */,
+				1544EE5E19E67A2F00A43505 /* CEBank.m */,
+				1558E2AD19EBA69400198F2D /* CESettings.h */,
+				1558E2AE19EBA69400198F2D /* CESettings.m */,
+				1547A99319EF9C640048EA9C /* CETUTDetails.h */,
+				1547A99419EF9C640048EA9C /* CETUTDetails.m */,
+				1547A99619EF9CD60048EA9C /* CETUTDetailsCurrencyRate.h */,
+				1547A99719EF9CD60048EA9C /* CETUTDetailsCurrencyRate.m */,
+				15A0309419F0E5DF003BEA73 /* CEBelRub.h */,
+				15A0309519F0E5DF003BEA73 /* CEBelRub.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15298D2819DEC81700F2B79A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				157B191419DE877200C0BD05 /* Main.storyboard */,
+				157B191919DE877200C0BD05 /* LaunchScreen.xib */,
+				1533BB4819E2E34500234C35 /* CENBTableViewCell.h */,
+				1533BB4919E2E34500234C35 /* CENBTableViewCell.m */,
+				1510A33719E431B200CCB15A /* CETUTTableViewCell.h */,
+				1510A33819E431B200CCB15A /* CETUTTableViewCell.m */,
+				1544EE6019E6D8D600A43505 /* CELockWindow.h */,
+				1544EE6119E6D8D600A43505 /* CELockWindow.m */,
+				15E05EFA19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.h */,
+				15E05EFB19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.m */,
+				1551C44519EE77750020A62E /* CEImageView.h */,
+				1551C44619EE77750020A62E /* CEImageView.m */,
+				1551C44E19EEB4770020A62E /* CELoadingView.h */,
+				1551C44F19EEB4770020A62E /* CELoadingView.m */,
+				1547A9A219F00A4D0048EA9C /* CEConverterCell.h */,
+				1547A9A319F00A4D0048EA9C /* CEConverterCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15298D2919DEC84D00F2B79A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1558E2AC19EBA42800198F2D /* Settings */,
+				15298D3419DEE33000F2B79A /* Parcers */,
+				15298D2E19DED77700F2B79A /* Protocols */,
+				15298D2A19DEC98600F2B79A /* CENetWork.h */,
+				15298D2B19DEC98600F2B79A /* CENetWork.m */,
+				1533BB4219E2ADB900234C35 /* CENationalBank.h */,
+				1533BB4319E2ADB900234C35 /* CENationalBank.m */,
+				1533BB4519E2E28C00234C35 /* CENBTableViewController.h */,
+				1533BB4619E2E28C00234C35 /* CENBTableViewController.m */,
+				1510A33119E42DD400CCB15A /* CETUTbyManager.h */,
+				1510A33219E42DD400CCB15A /* CETUTbyManager.m */,
+				1510A33419E4302900CCB15A /* CETUTTableViewController.h */,
+				1510A33519E4302900CCB15A /* CETUTTableViewController.m */,
+				15B8C4F319E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.h */,
+				15B8C4F419E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.m */,
+				15CE71F119ED462500F0AFD3 /* CEHistoryTableViewController.h */,
+				15CE71F219ED462500F0AFD3 /* CEHistoryTableViewController.m */,
+				1547A99919EFC60E0048EA9C /* CETUTDetailViewController.h */,
+				1547A99A19EFC60E0048EA9C /* CETUTDetailViewController.m */,
+				1547A99C19EFEC830048EA9C /* CEConverter.h */,
+				1547A99D19EFEC830048EA9C /* CEConverter.m */,
+				1547A99F19F005DD0048EA9C /* CEConverterExtended.h */,
+				1547A9A019F005DD0048EA9C /* CEConverterExtended.m */,
+				1547A9A519F00A870048EA9C /* CEConverterSelectTableView.h */,
+				1547A9A619F00A870048EA9C /* CEConverterSelectTableView.m */,
+				157FD63E19F112D100267C07 /* CEMapViewController.h */,
+				157FD63F19F112D100267C07 /* CEMapViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		15298D2E19DED77700F2B79A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				15298D2F19DED7CA00F2B79A /* IParcer.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		15298D3419DEE33000F2B79A /* Parcers */ = {
+			isa = PBXGroup;
+			children = (
+				1510A32A19E3E1C600CCB15A /* TUTBY */,
+				1533BB2A19E26B6800234C35 /* NationalBank */,
+			);
+			path = Parcers;
+			sourceTree = "<group>";
+		};
+		1533BB2A19E26B6800234C35 /* NationalBank */ = {
+			isa = PBXGroup;
+			children = (
+				15298D3519DEE39C00F2B79A /* CECurrencyNationalBankParcer.h */,
+				15298D3619DEE39C00F2B79A /* CECurrencyNationalBankParcer.m */,
+				1533BB2719E26B5600234C35 /* CENBRateXMLParcerDelegate.h */,
+				1533BB2819E26B5600234C35 /* CENBRateXMLParcerDelegate.m */,
+				1533BB2B19E2886F00234C35 /* CENBRateDynamics.h */,
+				1533BB2C19E2886F00234C35 /* CENBRateDynamics.m */,
+				1533BB2E19E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.h */,
+				1533BB2F19E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.m */,
+				1533BB3619E29F4A00234C35 /* CEMetalRateParcer.h */,
+				1533BB3719E29F4A00234C35 /* CEMetalRateParcer.m */,
+				1533BB3919E2A20B00234C35 /* CEMetalRateXMLDelegate.h */,
+				1533BB3A19E2A20B00234C35 /* CEMetalRateXMLDelegate.m */,
+				1533BB3C19E2A42B00234C35 /* CERefinancingRateParcer.h */,
+				1533BB3D19E2A42B00234C35 /* CERefinancingRateParcer.m */,
+				1533BB3F19E2A56600234C35 /* CERefinancingRateParcerDelegate.h */,
+				1533BB4019E2A56600234C35 /* CERefinancingRateParcerDelegate.m */,
+				157887BC19E51CFF002EBD27 /* CEDate.h */,
+				157887BD19E51CFF002EBD27 /* CEDate.m */,
+			);
+			path = NationalBank;
+			sourceTree = "<group>";
+		};
+		153FF37C19ED04030081FE9F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				153FF38619ED07560081FE9F /* CoreDataEntity */,
+				153FF37D19ED04CD0081FE9F /* CEDataBaseDirector.h */,
+				153FF37E19ED04CD0081FE9F /* CEDataBaseDirector.m */,
+				153FF38019ED04EE0081FE9F /* CEEntityManager.h */,
+				153FF38119ED04EE0081FE9F /* CEEntityManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		153FF38619ED07560081FE9F /* CoreDataEntity */ = {
+			isa = PBXGroup;
+			children = (
+				153FF39C19ED14EE0081FE9F /* Rate.h */,
+				153FF39D19ED14EE0081FE9F /* Rate.m */,
+				153FF39019ED0B2E0081FE9F /* Currency.h */,
+				153FF39119ED0B2E0081FE9F /* Currency.m */,
+				153FF39619ED0C540081FE9F /* Currency+Create.h */,
+				153FF39719ED0C540081FE9F /* Currency+Create.m */,
+				153FF39919ED0C6B0081FE9F /* Rate+Create.h */,
+				153FF39A19ED0C6B0081FE9F /* Rate+Create.m */,
+			);
+			path = CoreDataEntity;
+			sourceTree = "<group>";
+		};
+		1558E2AC19EBA42800198F2D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				15B8C4F619E7C4B400B909F3 /* CESettingsTableViewController.h */,
+				15B8C4F719E7C4B400B909F3 /* CESettingsTableViewController.m */,
+				15E05EF719E7E66C00D789C8 /* CESettingsFavoriteTableViewController.h */,
+				15E05EF819E7E66C00D789C8 /* CESettingsFavoriteTableViewController.m */,
+				15E05EFD19E7F48A00D789C8 /* CESettingsFavoriteViewController.h */,
+				15E05EFE19E7F48A00D789C8 /* CESettingsFavoriteViewController.m */,
+				1558E2B019EC035600198F2D /* CESettingsLocationTableViewController.h */,
+				1558E2B119EC035600198F2D /* CESettingsLocationTableViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		157B18FE19DE877200C0BD05 = {
+			isa = PBXGroup;
+			children = (
+				157FD66A19F11FCA00267C07 /* Frameworks */,
+				157B190919DE877200C0BD05 /* CurrencyExchange */,
+				157B192319DE877200C0BD05 /* CurrencyExchangeTests */,
+				157B190819DE877200C0BD05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		157B190819DE877200C0BD05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				157B190719DE877200C0BD05 /* CurrencyExchange.app */,
+				157B192019DE877200C0BD05 /* CurrencyExchangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		157B190919DE877200C0BD05 /* CurrencyExchange */ = {
+			isa = PBXGroup;
+			children = (
+				15298D2919DEC84D00F2B79A /* Controller */,
+				15298D2819DEC81700F2B79A /* View */,
+				15298D2719DEC7FD00F2B79A /* Model */,
+				157B190E19DE877200C0BD05 /* AppDelegate.h */,
+				15298D3019DEDFFD00F2B79A /* Constants.h */,
+				157B190F19DE877200C0BD05 /* AppDelegate.m */,
+				157B191719DE877200C0BD05 /* Images.xcassets */,
+				157B190A19DE877200C0BD05 /* Supporting Files */,
+			);
+			path = CurrencyExchange;
+			sourceTree = "<group>";
+		};
+		157B190A19DE877200C0BD05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				157B190B19DE877200C0BD05 /* Info.plist */,
+				157B190C19DE877200C0BD05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		157B192319DE877200C0BD05 /* CurrencyExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				157B192619DE877200C0BD05 /* CurrencyExchangeTests.m */,
+				157B192419DE877200C0BD05 /* Supporting Files */,
+			);
+			path = CurrencyExchangeTests;
+			sourceTree = "<group>";
+		};
+		157B192419DE877200C0BD05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				157B192519DE877200C0BD05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		157FD66A19F11FCA00267C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157FD66D19F1268800267C07 /* GoogleMaps.bundle */,
+				157FD66B19F1205100267C07 /* GoogleMaps.framework */,
+				157FD65719F1153000267C07 /* SystemConfiguration.framework */,
+				157FD65519F1151800267C07 /* QuartzCore.framework */,
+				157FD65319F1150900267C07 /* OpenGLES.framework */,
+				157FD65119F114ED00267C07 /* libz.dylib */,
+				157FD64F19F114D400267C07 /* libicucore.dylib */,
+				157FD64D19F114AC00267C07 /* libc++.dylib */,
+				157FD64B19F1148900267C07 /* ImageIO.framework */,
+				157FD64919F1147000267C07 /* GLKit.framework */,
+				157FD64719F1145800267C07 /* CoreText.framework */,
+				157FD64519F1145000267C07 /* CoreLocation.framework */,
+				157FD64319F1143800267C07 /* AVFoundation.framework */,
+				153FF38319ED056D0081FE9F /* CoreData.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		157B190619DE877200C0BD05 /* CurrencyExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157B192A19DE877200C0BD05 /* Build configuration list for PBXNativeTarget "CurrencyExchange" */;
+			buildPhases = (
+				157B190319DE877200C0BD05 /* Sources */,
+				157B190419DE877200C0BD05 /* Frameworks */,
+				157B190519DE877200C0BD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyExchange;
+			productName = CurrencyExchange;
+			productReference = 157B190719DE877200C0BD05 /* CurrencyExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		157B191F19DE877200C0BD05 /* CurrencyExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157B192D19DE877200C0BD05 /* Build configuration list for PBXNativeTarget "CurrencyExchangeTests" */;
+			buildPhases = (
+				157B191C19DE877200C0BD05 /* Sources */,
+				157B191D19DE877200C0BD05 /* Frameworks */,
+				157B191E19DE877200C0BD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157B192219DE877200C0BD05 /* PBXTargetDependency */,
+			);
+			name = CurrencyExchangeTests;
+			productName = CurrencyExchangeTests;
+			productReference = 157B192019DE877200C0BD05 /* CurrencyExchangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157B18FF19DE877200C0BD05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alex Tovstyga";
+				TargetAttributes = {
+					157B190619DE877200C0BD05 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					157B191F19DE877200C0BD05 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 157B190619DE877200C0BD05;
+					};
+				};
+			};
+			buildConfigurationList = 157B190219DE877200C0BD05 /* Build configuration list for PBXProject "CurrencyExchange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 157B18FE19DE877200C0BD05;
+			productRefGroup = 157B190819DE877200C0BD05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				157B190619DE877200C0BD05 /* CurrencyExchange */,
+				157B191F19DE877200C0BD05 /* CurrencyExchangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157B190519DE877200C0BD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B191619DE877200C0BD05 /* Main.storyboard in Resources */,
+				1533BB3519E297DC00234C35 /* MetalsPropertyList.plist in Resources */,
+				15298D2619DE8F1500F2B79A /* TutbyFinancePropertyList.plist in Resources */,
+				157B191B19DE877200C0BD05 /* LaunchScreen.xib in Resources */,
+				157B191819DE877200C0BD05 /* Images.xcassets in Resources */,
+				15E05EF619E7C91700D789C8 /* Settings.plist in Resources */,
+				157FD66E19F1268800267C07 /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B191E19DE877200C0BD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		157B190319DE877200C0BD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1547A99519EF9C640048EA9C /* CETUTDetails.m in Sources */,
+				153FF39E19ED14EE0081FE9F /* Rate.m in Sources */,
+				153FF39219ED0B2E0081FE9F /* Currency.m in Sources */,
+				153FF37F19ED04CD0081FE9F /* CEDataBaseDirector.m in Sources */,
+				15298D2C19DEC98600F2B79A /* CENetWork.m in Sources */,
+				1544EE6219E6D8D600A43505 /* CELockWindow.m in Sources */,
+				1533BB3819E29F4A00234C35 /* CEMetalRateParcer.m in Sources */,
+				1533BB3B19E2A20B00234C35 /* CEMetalRateXMLDelegate.m in Sources */,
+				1533BB4719E2E28C00234C35 /* CENBTableViewController.m in Sources */,
+				15B8C4F819E7C4B400B909F3 /* CESettingsTableViewController.m in Sources */,
+				1533BB3319E296D600234C35 /* CEMetalsRate.m in Sources */,
+				1547A99B19EFC60E0048EA9C /* CETUTDetailViewController.m in Sources */,
+				153FF39B19ED0C6B0081FE9F /* Rate+Create.m in Sources */,
+				1533BB2D19E2886F00234C35 /* CENBRateDynamics.m in Sources */,
+				157887BE19E51CFF002EBD27 /* CEDate.m in Sources */,
+				1551C44719EE77750020A62E /* CEImageView.m in Sources */,
+				1547A99819EF9CD60048EA9C /* CETUTDetailsCurrencyRate.m in Sources */,
+				15E05EFC19E7EA3500D789C8 /* CESettingsFavoriteTableViewCell.m in Sources */,
+				1551C45019EEB4770020A62E /* CELoadingView.m in Sources */,
+				1510A32D19E3E21900CCB15A /* CETUTParcer.m in Sources */,
+				15E05EF919E7E66C00D789C8 /* CESettingsFavoriteTableViewController.m in Sources */,
+				1547A9A419F00A4D0048EA9C /* CEConverterCell.m in Sources */,
+				153FF39819ED0C540081FE9F /* Currency+Create.m in Sources */,
+				1510A33619E4302900CCB15A /* CETUTTableViewController.m in Sources */,
+				15CE71F319ED462500F0AFD3 /* CEHistoryTableViewController.m in Sources */,
+				1558E2AF19EBA69400198F2D /* CESettings.m in Sources */,
+				1547A99E19EFEC830048EA9C /* CEConverter.m in Sources */,
+				15298D3719DEE39C00F2B79A /* CECurrencyNationalBankParcer.m in Sources */,
+				153FF38219ED04EE0081FE9F /* CEEntityManager.m in Sources */,
+				1510A33919E431B200CCB15A /* CETUTTableViewCell.m in Sources */,
+				15E05EFF19E7F48A00D789C8 /* CESettingsFavoriteViewController.m in Sources */,
+				1533BB2919E26B5600234C35 /* CENBRateXMLParcerDelegate.m in Sources */,
+				15298D3319DEE1A000F2B79A /* CECurrencyNationalBank.m in Sources */,
+				1544EE5C19E6762000A43505 /* CETUTParametrs.m in Sources */,
+				1547A9A119F005DD0048EA9C /* CEConverterExtended.m in Sources */,
+				153FF37B19ED03EE0081FE9F /* DataBase.xcdatamodeld in Sources */,
+				1510A33319E42DD400CCB15A /* CETUTbyManager.m in Sources */,
+				157B191019DE877200C0BD05 /* AppDelegate.m in Sources */,
+				1547A99219EF99400048EA9C /* CETUTParcerDetail.m in Sources */,
+				1533BB4419E2ADB900234C35 /* CENationalBank.m in Sources */,
+				1547A9A719F00A870048EA9C /* CEConverterSelectTableView.m in Sources */,
+				1510A33019E41C4D00CCB15A /* CETUTbyCurrency.m in Sources */,
+				1533BB3E19E2A42B00234C35 /* CERefinancingRateParcer.m in Sources */,
+				157B190D19DE877200C0BD05 /* main.m in Sources */,
+				1533BB4119E2A56600234C35 /* CERefinancingRateParcerDelegate.m in Sources */,
+				157FD64019F112D100267C07 /* CEMapViewController.m in Sources */,
+				1558E2B219EC035600198F2D /* CESettingsLocationTableViewController.m in Sources */,
+				1533BB4A19E2E34500234C35 /* CENBTableViewCell.m in Sources */,
+				1533BB3019E28D6C00234C35 /* CENBRateDynamicsXMLParcerDelegate.m in Sources */,
+				15A0309619F0E5DF003BEA73 /* CEBelRub.m in Sources */,
+				15B8C4F519E7C37300B909F3 /* CEMainTableVIewControllerTableViewController.m in Sources */,
+				1544EE5F19E67A2F00A43505 /* CEBank.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B191C19DE877200C0BD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B192719DE877200C0BD05 /* CurrencyExchangeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157B192219DE877200C0BD05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 157B190619DE877200C0BD05 /* CurrencyExchange */;
+			targetProxy = 157B192119DE877200C0BD05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		157B191419DE877200C0BD05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157B191519DE877200C0BD05 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		157B191919DE877200C0BD05 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157B191A19DE877200C0BD05 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		157B192819DE877200C0BD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		157B192919DE877200C0BD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		157B192B19DE877200C0BD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CurrencyExchange",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		157B192C19DE877200C0BD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CurrencyExchange",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		157B192E19DE877200C0BD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrencyExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyExchange.app/CurrencyExchange";
+			};
+			name = Debug;
+		};
+		157B192F19DE877200C0BD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrencyExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyExchange.app/CurrencyExchange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		157B190219DE877200C0BD05 /* Build configuration list for PBXProject "CurrencyExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B192819DE877200C0BD05 /* Debug */,
+				157B192919DE877200C0BD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157B192A19DE877200C0BD05 /* Build configuration list for PBXNativeTarget "CurrencyExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B192B19DE877200C0BD05 /* Debug */,
+				157B192C19DE877200C0BD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157B192D19DE877200C0BD05 /* Build configuration list for PBXNativeTarget "CurrencyExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B192E19DE877200C0BD05 /* Debug */,
+				157B192F19DE877200C0BD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		153FF37919ED03EE0081FE9F /* DataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				153FF37A19ED03EE0081FE9F /* DataBase.xcdatamodel */,
+			);
+			currentVersion = 153FF37A19ED03EE0081FE9F /* DataBase.xcdatamodel */;
+			path = DataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 157B18FF19DE877200C0BD05 /* Project object */;
+}

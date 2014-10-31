@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Currency" representedClassName="Currency" syncable="YES">
+        <attribute name="charCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quotName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scale" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rate" inverseName="currency" inverseEntity="Rate" syncable="YES"/>
+    </entity>
+    <entity name="Rate" representedClassName="Rate" syncable="YES">
+        <attribute name="currencyID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currency" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="rate" inverseEntity="Currency" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Currency" positionX="-72" positionY="-18" width="128" height="133"/>
+        <element name="Rate" positionX="151" positionY="26" width="128" height="103"/>
+    </elements>
+</model>

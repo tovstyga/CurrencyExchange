@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>palladium</key>
+	<dict>
+		<key>NameEng</key>
+		<string>Palladium</string>
+		<key>NameRu</key>
+		<string>Палладий</string>
+		<key>NameBel</key>
+		<string>Паладый</string>
+		<key>Code</key>
+		<string>3</string>
+	</dict>
+	<key>platinum</key>
+	<dict>
+		<key>NameEng</key>
+		<string>Platinum</string>
+		<key>NameRu</key>
+		<string>Платина</string>
+		<key>NameBel</key>
+		<string>Плаціна</string>
+		<key>Code</key>
+		<string>2</string>
+	</dict>
+	<key>silver</key>
+	<dict>
+		<key>NameEng</key>
+		<string>Silver</string>
+		<key>NameRu</key>
+		<string>Серебро</string>
+		<key>NameBel</key>
+		<string>Серабро</string>
+		<key>Code</key>
+		<string>1</string>
+	</dict>
+	<key>gold</key>
+	<dict>
+		<key>NameEng</key>
+		<string>Gold</string>
+		<key>NameRu</key>
+		<string>Золото</string>
+		<key>NameBel</key>
+		<string>Золата</string>
+		<key>Code</key>
+		<string>0</string>
+	</dict>
+</dict>
+</plist>
